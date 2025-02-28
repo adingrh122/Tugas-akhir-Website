@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tugas Website Dicoding</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,800;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigasi -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Arome Cafe</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center px-3">
+            <li class="nav-item px-2">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#tentang">Tentang Kami</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#daftar">Daftar Menu</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Slider -->
+    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="img/1.png"
+            class="d-block w-100"
+            alt="webku"
+            style="
+              object-fit: cover;
+              height: 95vh;
+              width: 100vw;
+              image-rendering: high-quality;
+            "
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/2.png"
+            class="d-block w-100"
+            alt="webku"
+            style="
+              object-fit: cover;
+              height: 95vh;
+              width: 100vw;
+              image-rendering: high-quality;
+            "
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="img/3.png"
+            class="d-block w-100"
+            alt="webku"
+            style="
+              object-fit: cover;
+              height: 95vh;
+              width: 100vw;
+              image-rendering: high-quality;
+            "
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Tentang Kami -->
+    <div class="card text-center mt-5">
+      <div class="card-header">
+        <h2>Tentang Kami</h2>
+      </div>
+      <div class="card-body d-flex align-items-center">
+        <div class="flex-shrink-0" style="width: 40%">
+          <img
+            src="https://i.pinimg.com/736x/6a/e4/82/6ae482a0690b8ca89fd3acd554a36d66.jpg"
+            style="
+              width: 100%;
+              height: 400px;
+              object-fit: cover;
+              border-radius: 10px;
+            "
+          />
+        </div>
+        <div class="flex-grow-1 ms-4 text-start">
+          <h5 class="card-title">Arome Cofe</h5>
+          <p class="card-text">
+            Berdiri sejak 2004, kami memulai perjalanan ini dengan satu tujuan:
+            menghadirkan kopi berkualitas yang bisa dinikmati semua orang. Dari
+            biji pilihan hingga setiap cangkir yang tersaji, kami selalu
+            mengutamakan rasa, kualitas, dan pengalaman terbaik. Kami percaya
+            bahwa kopi bukan sekadar minuman, tapi cerita yang menyatukan. Mari
+            menikmati setiap tegukan bersama kami!
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Daftar Menu -->
+    <h2 class="text-center mt-5 mb-4 fw-bold">Daftar Menu</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100" style="transition: transform 0.3s ease">
+          <img
+            src="https://i.pinimg.com/736x/bf/0d/05/bf0d05789ac91634d16f9efc9e768808.jpg"
+            class="card-img-top"
+            alt="..."
+            style="cursor: pointer; height: 250px; object-fit: cover"
+            onmouseover="this.parentElement.style.transform='scale(1.05)'"
+            onmouseout="this.parentElement.style.transform='scale(1)'"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bold">Black Coffee</h5>
+            <p class="card-text" style="text-align: justify">
+              Kopi murni tanpa tambahan, menghadirkan rasa asli dari biji
+              pilihan. Disajikan dengan berbagai metode seduh, menghasilkan
+              karakter unik—baik itu bold, halus, atau beraroma kaya. Cocok
+              untuk pencinta kopi sejati.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="transition: transform 0.3s ease">
+          <img
+            src="https://i.pinimg.com/736x/88/f4/3c/88f43cdf7ab1130e5e45b815226c88c9.jpg"
+            class="card-img-top"
+            alt="..."
+            style="cursor: pointer; height: 250px; object-fit: cover"
+            onmouseover="this.parentElement.style.transform='scale(1.05)'"
+            onmouseout="this.parentElement.style.transform='scale(1)'"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bold">Latte Art</h5>
+            <p class="card-text" style="text-align: justify">
+              Lebih dari sekadar kopi, latte art adalah perpaduan sempurna
+              antara rasa dan estetika. Dibuat dengan teknik menuang susu
+              steamed ke espresso, menghasilkan pola indah di permukaannya.
+              Setiap cangkir bukan hanya lezat, tapi juga sebuah karya seni.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100" style="transition: transform 0.3s ease">
+          <img
+            src="https://i.pinimg.com/736x/33/44/2e/33442e58a74503c7cef4fc437a4ebc8e.jpg"
+            class="card-img-top"
+            alt="..."
+            style="cursor: pointer; height: 250px; object-fit: cover"
+            onmouseover="this.parentElement.style.transform='scale(1.05)'"
+            onmouseout="this.parentElement.style.transform='scale(1)'"
+          />
+          <div class="card-body">
+            <h5 class="card-title text-center fw-bold">Capuchino Coffee</h5>
+            <p class="card-text" style="text-align: justify">
+              Perpaduan sempurna antara espresso, susu steamed, dan foam lembut
+              di atasnya. Teksturnya creamy dengan rasa seimbang antara kuatnya
+              kopi dan lembutnya susu. Cocok dinikmati kapan saja.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact -->
+    <section id="contact" class="container mt-5">
+      <h2 class="text-center fw-bold mb-4">Contact Us</h2>
+      <p class="text-center mb-4">
+        Punya pertanyaan atau butuh dukungan? Jangan ragu untuk menghubungi kami
+      </p>
+
+      <div class="row justify-content-between">
+        <div class="col-md-5">
+          <form action="submit_form.php" method="POST" class="mb-4">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message:</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">
+                Send Message
+              </button>
+            </div>
+          </form>
+
+          <div class="contact-info">
+            <address>
+              <p><strong>Email:</strong> basuki.adi28@gmail.com</p>
+              <p><strong>Phone:</strong> +62895330360440</p>
+              <p><strong>Address:</strong> Bekasi Timur</p>
+            </address>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="map-container" style="height: 100%; min-height: 400px">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.951103242138!2d107.00911517409703!3d-6.270161061379774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698e748c9ed9c9%3A0x92d48b55b6bc4c21!2sJl.%20Kenanga%20Utara%2C%20Pengasinan%2C%20Kec.%20Rawalumbu%2C%20Kota%20Bks%2C%20Jawa%20Barat%2017115!5e0!3m2!1sid!2sid!4v1740734112435!5m2!1sid!2sid"
+              style="border: 0; width: 100%; height: 100%"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>
+              Arome Cafe adalah tempat di mana kualitas kopi bertemu dengan
+              kenyamanan. Kami berkomitmen untuk menghadirkan pengalaman kopi
+              terbaik untuk setiap pengunjung.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#tentang">Tentang Kami</a></li>
+              <li><a href="#daftar">Daftar Menu</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Contact Info</h3>
+            <div class="footer-contact-info">
+              <p><i class="fas fa-phone"></i> +62895330360440</p>
+              <p><i class="fas fa-envelope"></i> basuki.adi28@gmail.com</p>
+              <p><i class="fas fa-map-marker-alt"></i> Bekasi Timur</p>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>
+              Subscribe untuk mendapatkan update terbaru dan penawaran spesial.
+            </p>
+            <div class="newsletter-container">
+              <form class="newsletter-form">
+                <div class="input-group">
+                  <input type="email" placeholder="Enter your email" required />
+                  <button type="submit" class="subscribe-btn">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Arome Cafe. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Font Awesome untuk icons -->
+    <script
+      src="https://kit.fontawesome.com/your-font-awesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
